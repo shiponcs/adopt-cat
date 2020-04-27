@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  color: #333;
+}
+
+header {
+  margin-left: 10px;
+}
+
+header a,
+.search-results a {
+  text-decoration: none;
+}
+
+header a h1 {
+  color: white;
+}
+
+body {
+  background-color: #869c96;
+  background-image: url("/background.bb6ed70a.png");
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-boards {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.search-boards form {
+  background-color: rgb(224, 224, 172);
+  width: 360px;
+  padding: 10px;
+  /* margin: 5px 20px 5px 20px; */
+  margin: 0 auto;
+  /* float: left; */
+  border-radius: 5px;
+  border: 2px solid peru;
+}
+
+.search-boards label {
+  display: block;
+  width: 10px;
+}
+
+.search-boards input,
+.search-boards select {
+  width: 300px;
+  margin: 0 0 30px 0;
+  padding: 2px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.search-btn,
+.details button {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(241, 232, 181);
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid peru;
+}
+
+.search-btn:hover,
+.details button:hover {
+  background-color: rgb(180, 165, 80);
+}
+
+.search-results,
+.details {
+  background-color: rgb(224, 224, 172);
+  display: block;
+  padding: 4px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 2px solid peru;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.round-image {
+  border-radius: 30%;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.pet-container {
+  display: grid;
+  grid-template-columns: 20% auto;
+  justify-items: center;
+  column-gap: 15px;
+  padding: 40px;
+}
+
+.pet-information {
+  justify-self: start;
+  text-align: start;
+}
+
+.details {
+  /* inherits from  .search-results, .details*/
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  padding: 20px;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+.carousel-smaller > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.carousel > img {
+  width: 200px;
+  height: 200px;
+}
+
+img.active {
+  border: 2px solid rgb(51, 255, 0);
+  opacity: 0.5;
+}
+
+#modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal:empty {
+  display: none;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

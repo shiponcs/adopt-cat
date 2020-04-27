@@ -1,9 +1,13 @@
 {
+  "homepage": "shiponcs.github.io/adop-cat",
   "name": "adopt-cat",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev:mock": "cross-env PET_MOCK=mock npm run dev",
     "dev": "parcel src/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
@@ -28,6 +32,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
+    "gh-pages": "^2.2.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.4"
   },
